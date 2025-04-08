@@ -1,0 +1,71 @@
+Food Inventory System MVP - Use Cases
+
+Goal:
+Enable users to track, manage, and optimize food usage at home or in small communities to prevent waste and promote smart consumption.
+
+---
+
+Core Use Cases
+
+1. User Registration and Login
+- Description: Allow users to create an account and log in to their personal food inventory.
+- Actors: User
+- Steps:
+  - Register with email/password
+  - Log in securely
+  - Log out
+
+2. Add Food Items to Inventory
+- Description: Users can input food they currently have at home.
+- Actors: User
+- Steps:
+  - Enter item name (e.g., "Milk", "Rice")
+  - Set quantity (e.g., 2 liters, 1 kg)
+  - Input purchase or expiration date
+  - (Optional) Category (e.g., Dairy, Canned, Produce)
+
+3. View Inventory
+- Description: Users can see a list of all food items they currently have.
+- Actors: User
+- Steps:
+  - View items sorted by expiration date or category
+  - See quantity remaining
+
+4. Edit/Delete Food Items
+- Description: Modify or remove food items as they are used or expire.
+- Actors: User
+- Steps:
+  - Select item to update quantity or date
+  - Delete item if it's used up or discarded
+
+5. Expiration Alerts
+- Description: Notify users when food is nearing expiration.
+- Actors: System
+- Steps:
+  - Detect items close to expiration
+  - Send notification (in-app or via email)
+
+6. Suggest Recipes Based on Inventory
+- Description: Provide simple recipe ideas using items the user already has.
+- Actors: System, User
+- Steps:
+  - System analyzes current inventory
+  - Suggests recipes (optional in MVP; could link to external sites)
+
+7. Track Food Usage
+- Description: Allow users to mark items as used to keep inventory current.
+- Actors: User
+- Steps:
+  - Select item
+  - Decrease quantity or mark as "Used"
+
+---
+
+Optional Nice-to-Have (If Time Permits)
+
+8. Shopping List Generator
+- Suggest items running low
+- Create a list of missing ingredients for favorite recipes
+
+9. Community Sharing
+- Users can donate or share excess food locally
