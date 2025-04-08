@@ -1,7 +1,7 @@
 <script lang="ts"></script>
 <template>
 <client-only>
-<!-- <NavBar /> -->
+<NavBar /> 
 <div id="fdmain" class="fd-main"></div>
 <!-- <Copyright /> -->
 </client-only>
