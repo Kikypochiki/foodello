@@ -3,8 +3,8 @@
     <client-only>
     <NavBar />
     <div id="fdmain" class="fd-main"></div>
-    <!-- <Cookies /> -->
-    <!-- <Copyright /> -->
+    <Cookies /> 
+     <Copyright /> 
     </client-only>
     </template>
     <script setup lang="ts">

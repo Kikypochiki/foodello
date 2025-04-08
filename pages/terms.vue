@@ -3,7 +3,7 @@
 <client-only>
 <NavBar /> 
 <div id="fdmain" class="fd-main"></div>
-<!-- <Copyright /> -->
+<Copyright /> 
 </client-only>
 </template>
 <script setup lang="ts">
