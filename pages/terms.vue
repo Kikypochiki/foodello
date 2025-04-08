@@ -1,33 +1,31 @@
+<script lang="ts"></script>
+<template>
+<client-only>
+<!-- <NavBar /> -->
+<div id="fdmain" class="fd-main"></div>
+<!-- <Copyright /> -->
+</client-only>
+</template>
 <script setup lang="ts">
-const title = ref("Foodello | Home");
-const description = ref("A Food Inventory System enabling everyone to be more food thrifty");
-
+import { useSeoMeta, useHead } from '@vueuse/head';
+const title = "Foodello | Home";
+const description = "A Food Inventory System enabling everyone to be more food thrifty";
 useSeoMeta({
- title: () => title.value,
- description: () => `${title.value} - ${description.value}`,
- charset: "utf-8",
- viewport: "width=device-width, initial-scale=1.0",
- robots: "index, follow",
-
- ogTitle: () => title.value,
- ogDescription: () => `${title.value} - ${description.value}`,
-
- // ogImage: "https://foodello.vercel.app/featured.jpg",
- // twitterCard: "summary_large_image",
+title: () => title,
+description: () => description,
+charset: "utf-8",
+viewport: "width=device-width, initial-scale=1.0"
+});
+useHead({
+link: [
+{rel: 'icon', type: 'image/png', href: '/logo.png'},
+{rel: 'stylesheet', href: '/reset.css'},
+{rel: 'stylesheet', href: '/custom.css'} ,
+{rel: 'preconnect', href: 'https://fonts.googleapis.com'},
+{rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: ''},
+{rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Underdog&display=swap" rel="stylesheet'}
+]
 });
 </script>
-
-<template>
-    <Html lang="en">
-    <Head>
-    <Link rel="icon" type="image/png" href="/logo.png"></Link>
-    <link href="/reset.css" rel="stylesheet" />
-    </Head>
-    </Html>
-   
-    <client-only>
-    <Welcome />
-    </client-only>
-   </template>
-   
-   <style scoped></style>
+<style scoped></style>
+<style></style>
